@@ -6,8 +6,30 @@
     <title>Unity WebGL Player | MathGame</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
+    <style>
+        div.scroll {
+            margin: 4px, 4px;
+            padding: 4px;
+            background-color: green;
+            width: 180px;
+            height: 320px;
+            overflow-x: hidden;
+            overflow-y: auto;
+            text-align: left;
+        }
+    </style>
   </head>
   <body style = "background-color:LightSkyBlue;">
+    <div style="background-color:green;position:absolute;left:0px;top:0px;z-index:10;" class="scroll">
+      <p>
+        R: Restart<br><br>
+        Esc: Main Menu<br><br>
+        WASD/Arrows: Move character<br><br>
+        Mouse: Hold and drag to move the camera<br><br>
+        Push numbers, tokens and signs around to make the player's and winner's numeric values equal<br><br>
+        Experiment what each sign does
+      </p>
+    </div>
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas" width=1280 height=720 tabindex="-1"></canvas>
       <div id="unity-loading-bar">
